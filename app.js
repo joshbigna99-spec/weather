@@ -596,7 +596,7 @@ const guiControls_default = {
   meltingRate : 0.01,
   evapRate : 0.0008, // 0.0005
   displayMode : 'DISP_REAL',
-  wrapHorizontally : true,
+  wrapHorizontally : false,
   SmoothCam : true,
   cameraMode : 'CAM_FREE',
   camSpeed : 0.01,
@@ -611,15 +611,15 @@ const guiControls_default = {
   greenHueSaturation : 1.05,
   greenHueHue : 0.0,
   enhancedLooks : false,
-  timeOfDay : 12.0,
-  latitude : 45.0,
+  timeOfDay : 8.0,
+  latitude : -35.3,
   multiLatitudeMode : false,
   latitudeLeft : 50.0,
   latitudeRight : 45.0,
   longitudeLeft : 0.0,
   longitudeRight : 0.0,
-  latitudeBasedTemperature : false,
-  month : 6.65, // Northern hemisphere summer solstice
+  latitudeBasedTemperature : true,
+  month : 11.2, // Northern hemisphere summer solstice
   sunAngle : 90.0,
   dayNightCycle : true,
   realtimeMode : false,  // 1:1 sim time with wall clock (sun, clock, and physics)
