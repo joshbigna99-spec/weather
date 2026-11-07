@@ -567,7 +567,7 @@ const guiControls_default = {
   globalHeating : 0.0,
   soundingForcing : 0.0,
   sunIntensity : 1.0,
-  waterTemperature : 25.0, // °C
+  waterTemperature : 5.0, // °C
   maxWaterTemperatureC : 100.0,
   maxSnowAccumulationCm : 4000.0,
   freshwaterFreezePointC : 0.0,
