@@ -65,7 +65,7 @@
   const DEFAULT_SETTINGS = {
     lightningV2Enabled: true,
     lightningPreset: 'Enhanced Realistic',
-    useRealisticLightningRatios: false,
+    useRealisticLightningRatios: true,
 
     globalLightningMultiplier: 1.0,
     // Flat GUI exposes CG / IC / Spider only — other types stay off so ratios match the sliders.
@@ -163,8 +163,8 @@
     gpuEffectQuality: 1.0,
     atmosphericLightingResolution: 1.0,
     dynamicLOD: true,
-    adaptiveLightningQuality: true,
-    performanceAutoScaling: true,
+    adaptiveLightningQuality: false,
+    performanceAutoScaling: false,
 
     debugShowChargeField: false,
     debugShowChargeGradient: false,
@@ -223,7 +223,7 @@
       anvilChannelVisibility: 1.1,
       channelIllumRatio: 0.5,
       // Flat Lightning GUI owns CG/IC/Spider sliders — locked ratios ignore them.
-      useRealisticLightningRatios: false,
+      useRealisticLightningRatios: true,
       positiveCgFrequency: 0.35,
       spiderLightningFrequency: 1.2,
       lightningPerformanceTier: 'High',
