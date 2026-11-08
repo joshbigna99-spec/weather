@@ -619,11 +619,11 @@ const guiControls_default = {
   longitudeLeft : 0.0,
   longitudeRight : 0.0,
   latitudeBasedTemperature : true,
-  month : 11.2, // Northern hemisphere summer solstice
-  sunAngle : 90.0,
+  month : 12, // Northern hemisphere summer solstice
+  sunAngle : 36.3,
   dayNightCycle : true,
   realtimeMode : false,  // 1:1 sim time with wall clock (sun, clock, and physics)
-  accelerateNight : true,
+  accelerateNight : false,
   greenhouseGases : 0.001,
   waterGreenHouseEffect : 0.0015,
   IR_rate : 1.0,
@@ -635,7 +635,7 @@ const guiControls_default = {
   brushSize : 20,
   wholeWidth : false,
   brushIntensity : 0.01,
-  allowCaves : false,
+  allowCaves : true,
   freshWaterSurfaceOnly : false,
   saltWaterSurfaceOnly : false,
   showGraph : false,
@@ -654,9 +654,9 @@ const guiControls_default = {
   enableRainbows : true,
   smoothClouds : true, // Hermite-smoothed cloud edges (original smoother look)
   paused : false,
-  IterPerFrame : 10,
+  IterPerFrame : 1,
   simSpeedMultiplier : 1,
-  auto_IterPerFrame : true,
+  auto_IterPerFrame : false,
   sound : true,
   easSoundEnabled : true, // EAS tone/voice independent of Enable Sound
   enableBloom : true,
@@ -724,7 +724,7 @@ const guiControls_default = {
   disableTempChangeHistory : false,
   skipLightingCalculation : false,
   showControlHelp : true,
-  coriolisStrength : 0.0, // 0 = off; weak sideways deflection of horizontal wind
+  coriolisStrength : 0.0025, // 0 = off; weak sideways deflection of horizontal wind
   enableSynopticSystems : true,
   displaySynopticSystems : true,
   enableDrylines : true,
@@ -758,7 +758,7 @@ const guiControls_default = {
   isobarCount : 80,                // approx. number of full-pressure isobars across the domain height; every 5th is major
   pressureSynopticScale : 8.0,     // hPa amplitude at synoptic L/H center (strength=1)
   synopticPressureCoupling : 0.5,  // 0 = synoptic pressure display-only; >0 drives wind via pressure gradient
-  pressurePhysicsMode : 'Classic', // 'Classic' | 'Anelastic' (density-weighted solver + virtual temperature)
+  pressurePhysicsMode : 'Anelastic', // 'Classic' | 'Anelastic' (density-weighted solver + virtual temperature)
   pressureSubsteps : 3,            // pressure passes per iteration; 3 ≈ real speed of sound at 50 m cells
   synopticDriftFactor : 1.0,       // synoptic L/H move with the 700-300 hPa wind times this (0 = fixed)
   jetStreamSpeed : 0.0,            // m/s upper-level wind the jet stream nudges toward (0 = off, negative = leftward)
@@ -786,7 +786,7 @@ const guiControls_default = {
   easVolume : 0.85,
   lightningIllumTexture : true,
   lightningIllumBlurStrength : 1.0,
-  performanceAutoScaling : true,
+  performanceAutoScaling : false,
   highResPerformanceMode : false, // Aggressive high-res throttling preset (also applied by Performance button)
   showDebugOverlay : false, // F3-style FPS / sim debug HUD
   reducedWeatherStationUpdates : false,
