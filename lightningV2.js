@@ -82,7 +82,7 @@
     strobeLightningFrequency: 0.0,
 
     enableLightning: true,
-    ltSdfQuality: 'Full',
+    ltSdfQuality: 'Balanced',
     ltDrawSdfBolts: true,
 
     lightningBrightness: 1.0,
