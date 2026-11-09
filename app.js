@@ -1469,8 +1469,8 @@ function applyHighResStartupGuard()
   if (cells < 700000)
     return false;
 
-  guiControls.performanceAutoScaling = true;
-  guiControls.auto_IterPerFrame = true;
+  guiControls.performanceAutoScaling = false;
+  guiControls.auto_IterPerFrame = false;
 
   const startIters = isUltraHighResSim() ? 1 : (cells >= 2000000 ? 2 : 3);
   if (!(Number(guiControls.IterPerFrame) <= startIters))
